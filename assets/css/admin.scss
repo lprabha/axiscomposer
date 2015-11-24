@@ -479,13 +479,30 @@ label[for="axiscomposer-pagebuilder-hide"] {
 		margin: 6px auto 5px auto;
 	}
 
-	span {
-		position: absolute;
-		width: 88%;
-		left: 6%;
-		bottom: 3px;
-		background: rgba(255,255,255,0.7);
-		padding-top: 1px;
+	span.shortcode-icon {
+		color: #777;
+		font-size: 16px;
+
+		mark.shortcode-label {
+			position: absolute;
+			width: 88%;
+			left: 6%;
+			bottom: 3px;
+			font-size: 11px;
+			background: rgba(255,255,255,0.7);
+			padding-top: 1px;
+		}
+
+		&:before {
+			@include icon( "\e006" );
+			line-height: 3em;
+		}
+
+		&.icon-video {
+			&:before {
+				content: "\e005";
+			}
+		}
 	}
 
 	&.disabled-shortcode {
