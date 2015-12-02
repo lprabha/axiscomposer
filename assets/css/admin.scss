@@ -275,7 +275,7 @@ label[for="axiscomposer-pagebuilder-hide"] {
 		margin-left: -1%;
 		overflow: hidden;
 		position: relative;
-		padding: 4px 12px 9px;
+		padding: 1% 1.5%;
 		@include user-select();
 	}
 
@@ -438,10 +438,10 @@ label[for="axiscomposer-pagebuilder-hide"] {
  */
 .insert-shortcode {
 	cursor: move;
-	height: auto;
+	min-height: 65px;
 	width: 10.1%;
 	border: 1px solid #e1e1e1;
-	padding: 2% 2%;
+	padding: 2% 1.5% 0;
 	background: #fff;
 	text-align: center;
 	text-decoration: none;
@@ -1640,6 +1640,19 @@ table.ac_status_table {
 		}
 	}
 }
+@media only screen and (max-width: 1100px) {
+	
+	#axiscomposer-pagebuilder ul.ac-tabs li a, 
+	#axiscomposer-portfolio-data ul.ac-tabs li a, 
+	.axiscomposer ul.ac-tabs li a{
+		font-size: 12px; 
+		padding: 5px;
+	}
+	.insert-shortcode {
+		padding: 2% 0 0;
+	}
+}
+
 
 /**
  * Optimisation for screens 900px and smaller
@@ -1677,6 +1690,7 @@ table.ac_status_table {
 			}
 		}
 	}
+	
 }
 
 /**
@@ -1700,6 +1714,12 @@ table.ac_status_table {
 	#axiscomposer-pagebuilder .checkbox {
 		width: 25px;
 	}
+	#axiscomposer-pagebuilder .axiscomposer-options-panel{
+		padding: 1% 2%;
+	}
+	.insert-shortcode {
+		width: 15.65%;
+	}
 }
 
 /**
@@ -1717,6 +1737,14 @@ table.ac_status_table {
 	.axiscomposer_options_panel fieldset.form-field,
 	.axiscomposer_options_panel p.form-field {
 		padding: 5px 20px 5px 20px !important;
+	}
+	#axiscomposer-pagebuilder .axiscomposer-options-panel {
+	  padding: 2% 2.5% 1%;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.insert-shortcode {
+	  width: 24%;
 	}
 }
 
